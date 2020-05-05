@@ -56,7 +56,7 @@ for item in exercicios:
         speech.add_text(str(n))
         speech.pause(time="1s")
 
-type_asistente = AssitentTypeEnum.GOOGLE
+type_asistente = AssitentTypeEnum.AWS
 
 assist = Assistent.factory(type_asistente)
 mp3 = assist.synthesize_speech(speech.speak())
