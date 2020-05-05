@@ -5,14 +5,18 @@ import random
 
 exercicios = [
     "Alongar os braços para frente 15 segundos",
-    "Alongar os braços atrás do pescoço 15 segundos ",
+    "Alongar o braço direito atrás do pescoço 15 segundos",
+    "Alongar o braço esquerdo atrás do pescoço 15 segundos",
     "Mexer o pescoço para baixo e para cima 15 segundos",
     "Girando as mãos 15 segundos",
     "Alongando os dedos 15 segundos",
     "Alongando as pernas 15 segundos",
-    "Flexionando as pernas 15 segundos",
-    "Joelho na frente 15 segundos",
-    "Flexionar o Joelho 15 segundos"]
+    "Flexionando as perna direita 15 segundos",
+    "Flexionando as perna esquerda 15 segundos",    
+    "Joelho direito na frente 15 segundos",
+    "Joelho esquerdo na frente 15 segundos",    
+    "Flexionar o Joelho direito 15 segundos",
+    "Flexionar o Joelho esquerdo 15 segundos"]
 
 half_1 = [1,2,3,4,5,6,7]
 half_2 = [8,9,10,11,12,13,14,15]
