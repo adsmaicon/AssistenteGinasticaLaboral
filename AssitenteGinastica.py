@@ -8,7 +8,7 @@ exercicios = [
     "Alongar os braços atrás do pescoço 15 segundos ",
     "Mexer o pescoço para baixo e para cima 15 segundos",
     "Girando as mãos 15 segundos",
-    "Alongando os dedos 15 segundos",
+    "Alongando os dedos 15 segundos",    
     "Alongando as pernas 15 segundos",
     "Flexionando as pernas 15 segundos",
     "Joelho na frente 15 segundos",
@@ -18,17 +18,23 @@ half_1 = [1,2,3,4,5,6,7]
 half_2 = [8,9,10,11,12,13,14,15]
 
 mylist = [
-    "Qilson",
-    "O que não te desafia não faz você mudar!", 
-    "",
-    "",
-    "",
-    "",
-    "O corpo alcança o que a mente acredita."
-    "",
-    "",
-    "",
-    ""]
+    "Nada pode parar quem sabe onde quer chegar.",
+    "Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado.",
+    "O sacrifício é o intervalo entre seu objetivo e a glória.",
+    "Transforme a motivação em hábito.",
+    "A dor é temporária. A glória é eterna.",
+    "O que não te desafia não te faz mudar.",
+    "Para ter sucesso é preciso primeiro acreditar que podemos.",
+    "A excelência não é um ato, mas um hábito.",
+    "O preço da perfeição é a prática constante.",
+    "Acreditar é essencial, mas ter a atitude é o que faz a diferença.",
+    "Uma conquista por dia.",
+    "Mentalize coisas boas e elas acontecerão.",
+    "Se a vida não ficar mais fácil, trate de ficar mais forte.",
+    "Um passo de cada vez. Mas sempre para frente.",
+    "Quem não desiste não pode ser vencido.",
+    "Mantenha o corpo forte e a cabeça erguida.",
+]
 
 speech = Speech()
 
@@ -46,7 +52,7 @@ for item in exercicios:
         speech.add_text(str(n))
         speech.pause(time="1s")
 
-type_asistente = AssitentTypeEnum.AWS
+type_asistente = AssitentTypeEnum.GOOGLE
 
 assist = Assistent.factory(type_asistente)
 mp3 = assist.synthesize_speech(speech.speak())
