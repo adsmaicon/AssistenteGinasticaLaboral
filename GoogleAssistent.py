@@ -8,8 +8,8 @@ class GoogleAssistent:
         synthesis_input = texttospeech.types.SynthesisInput(ssml=ssml_text)
 
         voice = texttospeech.types.VoiceSelectionParams(
-            language_code='pt-BR',
-            ssml_gender=texttospeech.enums.SsmlVoiceGender.FEMALE)
+            language_code='pt-BR',            
+            ssml_gender=texttospeech.enums.SsmlVoiceGender.MALE)
 
         audio_config = texttospeech.types.AudioConfig(
             audio_encoding=texttospeech.enums.AudioEncoding.MP3)

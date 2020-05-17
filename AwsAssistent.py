@@ -8,7 +8,8 @@ class AwsAssistent():
             region_name='us-west-2').client('polly')
 
         response = polly_client.synthesize_speech(
-            VoiceId="Giorgio",
+            # VoiceId="Giorgio",
+            VoiceId="Carla",
             OutputFormat='mp3', 
             LanguageCode='pt-BR',
             TextType='ssml',
